@@ -2013,7 +2013,7 @@ textarea.form-control {
     margin-top: 15px; }
   .progress-container .progress-badge {
     color: #888;
-    font-size: 0.8571em;
+    font-size: 0.5571em;
     text-transform: uppercase; }
   .progress-container .progress {
     height: 1px;
@@ -5033,7 +5033,7 @@ Created using IcoMoon - icomoon.io
 
 .gallery figure.cc-effect figcaption::before,
 .gallery figure.cc-effect figcaption::after {
-  position: absolute;
+  position: top;
   content: '';
   opacity: 0; }
 

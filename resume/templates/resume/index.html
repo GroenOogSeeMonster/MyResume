@@ -7,9 +7,9 @@
     <title>Online resume of Renier Kotze</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="static/css/aos.css?ver=1.1.0" rel="stylesheet">
-    <link href="static/css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
-    <link href="static/css/main.css?ver=1.1.0" rel="stylesheet">
+    <link href="/static/css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="/static/css/main.css?ver=1.1.0" rel="stylesheet">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -31,6 +31,7 @@
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
               </ul>
@@ -47,9 +48,9 @@
       <div class="page-header-image" data-parallax="true" style="background-image: url('/static/images/cc-bg-1.jpg')"></div>
       <div class="container">
         <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="static/images/renier.jpg" alt="Image"/></a></div>
+          <div class="cc-profile-image"><a href="#"><img src="/static/images/renier.jpg" alt="Image"/></a></div>
           <div class="h2 title">Renier Kotze</div>
-          <p class="category text-white">Linux Expert, DevOps Engineer, Database Administrator, Web Developer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="static/Resume-Renier-Kotze.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+          <p class="category text-white">Linux Expert, DevOps Engineer, Database Administrator, Web Developer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
         </div>
       </div>
       <div class="section">
@@ -194,7 +195,7 @@
           <div class="col-md-6">
             <div class="progress-container progress-primary"><span class="progress-badge">Database Administration (PostgreSQL/MySQL)</span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div><span class="progress-value">Proficient</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div><span class="progress-value">Intermediate</span>
               </div>
             </div>
           </div>
@@ -214,72 +215,86 @@
     </div>
   </div>
 </div>
-<!-- <div class="section" id="portfolio">
+<div class="section" id="portfolio">
   <div class="container">
     <div class="row">
       <div class="col-md-6 ml-auto mr-auto">
         <div class="h4 text-center mb-4 title">Portfolio</div>
         <div class="nav-align-center">
           <ul class="nav nav-pills nav-pills-primary" role="tablist">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Projects" role="tablist"><i class="fa fa-superpowers" aria-hidden="true"></i></a></li>
+            <!-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Tech_Guides" role="tablist"><i class="fa fa-tachometer" aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Other" role="tablist"><i class="fa fa-cog" aria-hidden="true"></i></a></li> -->
           </ul>
         </div>
       </div>
     </div>
-    <div class="tab-content gallery mt-5">
-      <div class="tab-pane active" id="web-development">
+     <div class="tab-content gallery mt-5">
+      <div class="tab-pane active" id="Projects">
         <div class="ml-auto mr-auto">
           <div class="row">
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image"/>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top"><a href="#Projects">
+                  <figure class="cc-effect"><img src="/static/images/project-1.jpg" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Recent Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">PXE Ubuntu Server - One Digital Media</div>
+                      <p>When I joined the ODM, I identified that their digital screen delivery pipeline is being slowed down, as each screen needed to be loaded with customized Ubuntu OS.I developed a PXE solution (Using TFI), allowing these units to install the OS via the Network, managing to drive down the average install time of 15 minutes plus down to 4 minutes per unit.</p>
                     </figcaption>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image"/>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
+                  <figure class="cc-effect"><img src="/static/images/project-2.jpg" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Startup Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">National WAN - One Digital Media</div>
+                      <p>After implementing Nagios monitoring, upgrading, and migrating the main PostgreSQL Database, I worked to improve our cross branch communication. I rolled out a WAN using OpenVPN, upgrading network equipment cross country,and implemented various backup redundant internet links and installed monitoring to ensure uptime across the country.</p>
                     </figcaption>
                   </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
+                    <figure class="cc-effect"><img src="/static/images/project-5.jpg" alt="Image"/>
+                      <figcaption>
+                        <div class="h4">Database Server Upgrade - One Digital Media</div>
+                        <p>I developed a Test lab to be used to test new equipment, and configure all the equipment before installation on site. This drastically improved the technical teams quality of installations, as we reduced callbacks and installation failures by 17%.</p>
+                      </figcaption>
+                    </figure></a></div>
             </div>
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image"/>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
+                  <figure class="cc-effect"><img src="/static/images/project-3.jpg" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Food Order Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">Installation Test Lab - ComputAssist</div>
+                      <p>I developed a Test lab to be used to test new equipment, and configure all the equipment before installation on site. This drastically improved the technical teams quality of installations, as we reduced callbacks and installation failures by 17%.</p>
                     </figcaption>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image"/>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
+                  <figure class="cc-effect"><img src="/static/images/project-4.jpg" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Web Advertising Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">Technical Documentation - ComputAssist</div>
+                      <p>I wrote a technical manual for our technicians, and call center agents. The 100 page+ book was designed to be referenced by the technical teams with the aim to improve technical support, installation and quality of support.</p>
                     </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
+                  <figure class="cc-effect"><img src="/static/images/project-6.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Amazon Web Services - Premium Support</div>
+                      <p>I was both a Senior Cloud Engineer in the EC2 space, supporting Linux, VPC, and EC2 solutions. I also earned my SME (Subject Matter Expert) for EC2 and Linux. Within nine months of joining, I moved over to the deployment team, specializing in supporting Beanstalk, Cloudformation, and the Code*. I also had a lot of cross-team exposure with Amazon S3, Lambda, and Amazon Lightsail.</p>
+                  </figcaption>
                   </figure></a></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="tab-pane" id="graphic-design" role="tabpanel">
+<!--      <div class="tab-pane" id="graphic-design" role="tabpanel">
         <div class="ml-auto mr-auto">
           <div class="row">
             <div class="col-md-6">
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                  <figure class="cc-effect"><img src="images/graphic-design-1.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="/static/images/graphic-design-1.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Triangle Pattern</div>
                       <p>Graphic Design</p>
                     </figcaption>
                   </figure></a></div>
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                  <figure class="cc-effect"><img src="images/graphic-design-2.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="/static/images/graphic-design-2.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Abstract Umbrella</div>
                       <p>Graphic Design</p>
@@ -310,14 +325,14 @@
           <div class="row">
             <div class="col-md-6">
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="/static/images/photography-1.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Photoshoot</div>
                       <p>Photography</p>
                     </figcaption>
                   </figure></a></div>
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="cc-effect"><img src="images/photography-3.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="/static/images/photography-3.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Wedding Photoshoot</div>
                       <p>Photography</p>
@@ -326,14 +341,14 @@
             </div>
             <div class="col-md-6">
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="cc-effect"><img src="images/photography-2.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="/static/images/photography-2.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Beach Photoshoot</div>
                       <p>Photography</p>
                     </figcaption>
                   </figure></a></div>
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                  <figure class="cc-effect"><img src="images/photography-4.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="/static/images/photography-4.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Nature Photoshoot</div>
                       <p>Photography</p>
@@ -472,7 +487,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="static/images/reference-image-1.jpg" alt="Image"/>
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="/static/images/reference-image-1.jpg" alt="Image"/>
                 <div class="h5 pt-2">Alex Morton</div>
                 <p class="category">Ops Manager at AWS</p>
               </div>
@@ -486,12 +501,12 @@
           </div>
           <div class="carousel-item">
             <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="static/images/reference-image-2.jpg" alt="Image"/>
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="/static/images/reference-image-2.jpg" alt="Image"/>
                 <div class="h5 pt-2">Ross Simpson</div>
                 <p class="category">Chief Technology Officer at One Digital Media</p>
               </div>
               <div class="col-lg-10 col-md-9">
-                <p> I reported to Ross Simpson during my time at One Digital Media (ODM).</p>
+                <p> .</p>
                 <a href="mailto:simpson.ross@gmail.com">simpson.ross@gmail.com</a>.<br>
                 <a href="https://www.linkedin.com/in/ross-simpson-9026552a/">Linkedin Profile</a>.<br>
               </div>
@@ -499,7 +514,7 @@
           </div>
           <div class="carousel-item">
             <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="static/images/reference-image-4.jpg" alt="Image"/>
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="/static/images/reference-image-4.jpg" alt="Image"/>
                 <div class="h5 pt-2">Joerg Sandl</div>
                 <p class="category">Software Development Manager, Big Data, EC2</p>
               </div>
@@ -513,7 +528,7 @@
           </div>
           <div class="carousel-item">
             <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="static/images/reference-image-3.jpg" alt="Image"/>
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="/static/images/reference-image-3.jpg" alt="Image"/>
                 <div class="h5 pt-2">Michael Brunzlik</div>
                 <p class="category">Owner, Technology Systems Integration (Pty) Ltd</p>
               </div>
@@ -530,7 +545,7 @@
   </div>
 </div>
 <div class="section" id="contact">
-  <div class="cc-contact-information" style="background-image: url('static/images/staticmap.png')">
+  <div class="cc-contact-information" style="background-image: url('/static/images/staticmap.png')">
     <div class="container">
       <div class="cc-contact">
         <div class="row">
@@ -540,7 +555,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form action="https://formspree.io/your@email.com" method="POST">
+                    <form action="https://formspree.io/f/xayapjlg" method="POST">
                       <div class="p pb-3"><strong>Feel free to contact me </strong></div>
                       <div class="row mb-3">
                         <div class="col">
@@ -604,11 +619,11 @@
         <p>&copy; Resume of Renier Kotze. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
       </div>
     </footer>
-    <script src="static/js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
-    <script src="static/js/core/popper.min.js?ver=1.1.0"></script>
-    <script src="static/js/core/bootstrap.min.js?ver=1.1.0"></script>
-    <script src="static/js/now-ui-kit.js?ver=1.1.0"></script>
-    <script src="static/js/aos.js?ver=1.1.0"></script>
-    <script src="static/scripts/main.js?ver=1.1.0"></script>
+    <script src="/static/js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="/static/js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="/static/js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="/static/js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="/static/js/aos.js?ver=1.1.0"></script>
+    <script src="/static/scripts/main.js?ver=1.1.0"></script>
   </body>
 </html>
