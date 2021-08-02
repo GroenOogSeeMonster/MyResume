@@ -10,6 +10,7 @@
     <link href="/static/css/aos.css?ver=1.1.0" rel="stylesheet">
     <link href="/static/css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
     <link href="/static/css/main.css?ver=1.1.0" rel="stylesheet">
+    <link href="/static/css/modal.css?ver=1.1.0" rel="stylesheet">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -50,7 +51,7 @@
         <div class="content-center">
           <div class="cc-profile-image"><a href="#"><img src="/static/images/renier.jpg" alt="Image"/></a></div>
           <div class="h2 title">Renier Kotze</div>
-          <p class="category text-white">Linux Expert, DevOps Engineer, Database Administrator, Web Developer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+          <p class="category text-white">Linux Expert, DevOps Engineer, Database Administrator, Web Developer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="/static/Resume-Renier-Kotze.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
         </div>
       </div>
       <div class="section">
@@ -229,55 +230,100 @@
         </div>
       </div>
     </div>
+    </div>
      <div class="tab-content gallery mt-5">
       <div class="tab-pane active" id="Projects">
         <div class="ml-auto mr-auto">
           <div class="row">
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top"><a href="#Projects">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top">
                   <figure class="cc-effect"><img src="/static/images/project-1.jpg" alt="Image"/>
                     <figcaption>
-                      <div class="h4">PXE Ubuntu Server - One Digital Media</div>
-                      <p>When I joined the ODM, I identified that their digital screen delivery pipeline is being slowed down, as each screen needed to be loaded with customized Ubuntu OS.I developed a PXE solution (Using TFI), allowing these units to install the OS via the Network, managing to drive down the average install time of 15 minutes plus down to 4 minutes per unit.</p>
+                      <div class="h4">PXE Ubuntu Server - One Digital Media</div><br>
+                        <button class="modal-open" data-modal="modal1"> See More</button>
                     </figcaption>
+                        <div class="modal" id="modal1">
+                            <div class="modal-content">
+                              <div class="modal-header">PXE Ubuntu Server - One Digital Media</div>
+                              <div class="modal-body">When I joined the ODM, I identified that their digital screen delivery pipeline is being slowed down, as each screen needed to be loaded with customized Ubuntu OS.I developed a PXE solution (Using TFI), allowing these units to install the OS via the Network, managing to drive down the average install time of 15 minutes plus down to 4 minutes per unit.</div>
+                              <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                            </div>
+                        </div>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center">
                   <figure class="cc-effect"><img src="/static/images/project-2.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">National WAN - One Digital Media</div>
-                      <p>After implementing Nagios monitoring, upgrading, and migrating the main PostgreSQL Database, I worked to improve our cross branch communication. I rolled out a WAN using OpenVPN, upgrading network equipment cross country,and implemented various backup redundant internet links and installed monitoring to ensure uptime across the country.</p>
+                      <button class="modal-open" data-modal="modal2"> See More</button>
                     </figcaption>
+                    <div class="modal" id="modal2">
+                      <div class="modal-content">
+                        <div class="modal-header">National WAN - One Digital Media</div>
+                        <div class="modal-body">After implementing Nagios monitoring, upgrading, and migrating the main PostgreSQL Database, I worked to improve our cross branch communication. I rolled out a WAN using OpenVPN, upgrading network equipment cross country,and implemented various backup redundant internet links and installed monitoring to ensure uptime across the country.</div>
+                        <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                      </div>
+                  </div>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center">
                     <figure class="cc-effect"><img src="/static/images/project-5.jpg" alt="Image"/>
                       <figcaption>
                         <div class="h4">Database Server Upgrade - One Digital Media</div>
-                        <p>I developed a Test lab to be used to test new equipment, and configure all the equipment before installation on site. This drastically improved the technical teams quality of installations, as we reduced callbacks and installation failures by 17%.</p>
+                        <button class="modal-open" data-modal="modal5"> See More</button>
+                        <p></p>
                       </figcaption>
+                      <div class="modal" id="modal5">
+                        <div class="modal-content">
+                          <div class="modal-header">Database Server Upgrade - One Digital Media</div>
+                          <div class="modal-body">I was tasked to evaluate our Cloud-based hardware, running a web application stack and PostgreSQL database on Solaris with Sun Microsystems hardware running on a ZFS filesystem. I spent some time evaluating the Database and Web application performance and presented a proposal to move to a Ubuntu-based solution running on HP server hardware (Configured OpenZFS filesystem). The proposal was approved, and I implemented a new server without any downtime. We also identified a 20%+ improvement in our database and application performance overall.</div>
+                          <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                        </div>
+                    </div>
                     </figure></a></div>
             </div>
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center">
                   <figure class="cc-effect"><img src="/static/images/project-3.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Installation Test Lab - ComputAssist</div>
-                      <p>I developed a Test lab to be used to test new equipment, and configure all the equipment before installation on site. This drastically improved the technical teams quality of installations, as we reduced callbacks and installation failures by 17%.</p>
+                      <button class="modal-open" data-modal="modal3"> See More</button>
                     </figcaption>
+                    <div class="modal" id="modal3">
+                      <div class="modal-content">
+                        <div class="modal-header">Installation Test Lab - ComputAssist</div>
+                        <div class="modal-body">I developed a Test lab to be used to test new equipment, and configure all the equipment before installation on site. This drastically improved the technical teams quality of installations, as we reduced callbacks and installation failures by 17%.</div>
+                        <div class="modal-footer"><button class="modal-close">Close</button></div>
+                      </div>
+                  </div>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center">
                   <figure class="cc-effect"><img src="/static/images/project-4.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Technical Documentation - ComputAssist</div>
-                      <p>I wrote a technical manual for our technicians, and call center agents. The 100 page+ book was designed to be referenced by the technical teams with the aim to improve technical support, installation and quality of support.</p>
+                      <button class="modal-open" data-modal="modal4"> See More</button>
                     </figcaption>
+                    <div class="modal" id="modal4">
+                      <div class="modal-content">
+                        <div class="modal-header">Technical Documentation - ComputAssist</div>
+                        <div class="modal-body">I developed a Test lab to be used to test new equipment, and configure all the equipment before installation on site. This drastically improved the technical teams quality of installations, as we reduced callbacks and installation failures by 17%.</div>
+                        <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                      </div>
+                  </div>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
+              <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="center"><a href="#Projects">
                   <figure class="cc-effect"><img src="/static/images/project-6.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Amazon Web Services - Premium Support</div>
-                      <p>I was both a Senior Cloud Engineer in the EC2 space, supporting Linux, VPC, and EC2 solutions. I also earned my SME (Subject Matter Expert) for EC2 and Linux. Within nine months of joining, I moved over to the deployment team, specializing in supporting Beanstalk, Cloudformation, and the Code*. I also had a lot of cross-team exposure with Amazon S3, Lambda, and Amazon Lightsail.</p>
+                      <button class="modal-open" data-modal="modal6"> See More</button>
+                      <p></p>
                   </figcaption>
-                  </figure></a></div>
+                  <div class="modal" id="modal6">
+                    <div class="modal-content">
+                      <div class="modal-header">Amazon Web Services - Premium Support</div>
+                      <div class="modal-body">I was both a Senior Cloud Engineer in the EC2 space, supporting Linux, VPC, and EC2 solutions. I also earned my SME (Subject Matter Expert) for EC2 and Linux. Within nine months of joining, I moved over to the deployment team, specializing in supporting Beanstalk, Cloudformation, and the Code*. I also had a lot of cross-team exposure with Amazon S3, Lambda, and Amazon Lightsail.</div>
+                      <div class="modal-footer"><button class="link modal-close">Close</button></div>
+                    </div>
+                </div>
+                  </figure></a></div> -->
             </div>
           </div>
         </div>
@@ -625,5 +671,6 @@
     <script src="/static/js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="/static/js/aos.js?ver=1.1.0"></script>
     <script src="/static/scripts/main.js?ver=1.1.0"></script>
+    <script src="/static/js/modal.js?ver=1.1.0"></script>
   </body>
 </html>
